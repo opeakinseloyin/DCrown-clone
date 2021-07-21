@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- tell mobile devices with scale of 1 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- normalize.css css the same to all browsers  must go before owner css-->
+  <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css" />
+  <!-- responsive grid system -->
+  <link rel="stylesheet" type="text/css" href="vendors/css/grid.css" />
+  <!-- fontawsome -->
+  <!-- animated.css -->
+  <link rel="stylesheet" type="text/css" href="vendors/css/animate.css" />
+  <!-- fontawsome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
+  <!-- ionicons css -->
+  <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet" />
+  <!-- owner css -->
+  <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+  <!-- queries css -->
+  <link rel="stylesheet" type="text/css" href="resources/css/queries.css" />
+  <!-- google fonts LATO goes after owner css -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet" type="text/css" />
+
+  <title>DCrown</title>
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="resources/img/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="resources/img/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="resources/img/favicon.png">
+  <link rel="manifest" href="resources/img/favicon.png">
+  <link rel="mask-icon" href="resources/img/favicon.png" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body id="top">
+  <header>
+    <!-- nav bar -->
+    <nav>
+      <div class="row">
+        <!-- logo image -->
+        <img src="resources/img/logo.png" alt="Omnifood logo" class="logo" />
+        <img src="resources/img/logo.png" alt="Omnifood logo" class="logo-black js--logo-black" />
+        <!-- nav links -->
+        <ul class="main-nav">
+          <li><a href="#features"><i class="fas fa-truck"></i><span class="nav-text">Food delivery</span> </a></li>
+          <li><a href="#works"><i class="fas fa-info"></i><span class="nav-text">How it works!</span></a></li>
+          <li><a href="#cities"><i class="fas fa-city"></i><span class="nav-text">Our Location</span></a></li>
+          <li><a href="#plans"><i class="fas fa-utensils"></i><span class="nav-text">Order</span></a></li>
+        </ul>
+        <!-- mobile nav button -->
+        <a class="mobile-nav-icon">
+          <ion-icon class="i" name="menu"></ion-icon>
+        </a>
+      </div>
+    </nav>
+    <!-- center box -->
+    <div class="hero-text-box">
+      <h1>Taste Better, Live Better. <br />Start your food journey.</h1>
+      <a class="btn btn-full js--scroll-to-plans" href="#">I'm Hungry</a>
+      <a class="btn btn-ghost js--scroll-to-start" href="#">Show Me More</a>
+    </div>
+  </header>
+  <!-- feature section -->
+  <!-- display sticky nav at this section with js class -->
+  <section class="section-features js--section-features" id="features">
+    <div class="row">
+      <!-- html entity dash &mdash; -->
+      <h2>Get food fast &mdash; not fast food.</h2>
+      <p class="long-copy">
+        Hello, we’re DCrown, your new premium food delivery service. We know
+        you’re always busy. No time for cooking. So let us take care of that,
+        we’re really good at it, we promise!
+      </p>
+
+      <!-- use fluid grid -->
+      <div class="row js--wp-1">
+        <div class="col span-1-of-4 box">
+          <ion-icon class="icon-big" name="calendar"></ion-icon>
+          <h3>Event Planning</h3>
+          <p>
+            Weddings, Birthdays, Showers, Production/Showcase, Dinner Parties,
+            Any Occasions...
+          </p>
+        </div>
+        <div class="col span-1-of-4 box">
+          <ion-icon class="icon-big" name="pizza"></ion-icon>
+          <h3>Catering Services</h3>
+          <p>
+            Weddings, Birthdays, Showers, Corporate Events, Political or
+            Conventions etc..
+          </p>
+        </div>
+        <div class="col span-1-of-4 box">
+          <ion-icon class="icon-big" name="nutrition"></ion-icon>
+          <h3>Delicious Dishes</h3>
+          <p>
+            Rice and Vegetable, Basmati Rice, French Fries,
+            Pancake with Plantain Sauce, Shawarma, Small Chops, Pasta, Plantain,
+            Potato Chips, etc...
+          </p>
+        </div>
+        <div class="col span-1-of-4 box">
+          <ion-icon class="icon-big" name="cart"></ion-icon>
+          <h3>Food Delivery</h3>
+          <p>
+            Order any food of your choice, and we deliver it to your door step
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Favorite Meals Section -->
+  <!-- 100% of browser width  with 2 ul-->
+  <section class="section-meals">
+    <ul class="meals-showcase">
+      <li>
+        <!-- figure have image and caption -->
+        <figure class="meal-photo">
+          <img src="resources/img/1.jpg" alt="Korean bibimbap with egg and vegetables" />
+        </figure>
+      </li>
+      <li>
+        <figure class="meal-photo">
+          <img src="resources/img/2.jpg" alt="Simple italian pizza with cherry tomatoes" />
+        </figure>
+      </li>
+      <li>
+        <figure class="meal-photo">
+          <img src="resources/img/3.jpg" alt="Chicken breast steak with vegetables" />
+        </figure>
+      </li>
+      <li>
+        <figure class="meal-photo">
+          <img src="resources/img/4.jpg" alt="Autumn pumpkin soup" />
+        </figure>
+      </li>
+    </ul>
+    <!-- the li which is the child element that has the float property so that the parent
+      element the ul, will be clear the float after the ul element -->
+    <ul class="meals-showcase">
+      <li>
+        <figure class="meal-photo">
+          <img src="resources/img/5.jpg" alt="Paleo beef steak with vegetables" />
+        </figure>
+      </li>
+      <li>
+        <figure class="meal-photo">
+          <img src="resources/img/6.jpg" alt="Healthy baguette with egg and vegetables" />
+        </figure>
+      </li>
+      <li>
+        <figure class="meal-photo">
+          <img src="resources/img/7.jpg" alt="Burger with cheddar and bacon" />
+        </figure>
+      </li>
+      <li>
+        <figure class="meal-photo">
+          <img src="resources/img/8.jpg" alt="Granola with cherries and strawberries" />
+        </figure>
+      </li>
+    </ul>
+  </section>
+  <div class="clearfix"></div>
+  <!-- How it works section -->
+  <section class="section-steps" id="works">
+    <div class="row">
+      <h2>How it works &mdash; Simple as 1, 2, 3</h2>
+    </div>
+    <div class="row">
+      <div class="col span-1-of-2 steps-box">
+        <img src="resources/img/app-iPhone.png" alt="Omnifood app in iphone" class="app-screen js--wp-2" />
+      </div>
+      <div class="col span-1-of-2 steps-box">
+        <div class="works-step">
+          <div>1</div>
+          <p>
+            Choose the Meal tray that best fits your needs or Service you need done.
+          </p>
+        </div>
+        <div class="works-step">
+          <div>2</div>
+          <p>
+            Order your delicious meal using our website or WhatsApp. Or you
+            can even call us!
+          </p>
+        </div>
+        <div class="works-step">
+          <div>3</div>
+          <p>
+            Enjoy your delivered meal after less than 20 minutes. See you the next time!
+          </p>
+        </div>
+  </section>
+
+  <!-- cities section -->
+  <section class="section-cities" id="cities">
+    <div class="row">
+      <h2>Our Current Location</h2>
+    </div>
+    <div class="row js--wp-3 locale">
+      <!-- city -->
+      <div class="box col span-1-of-2">
+        <img src="resources/img/akure.jpg" alt="Akure" />
+      </div>
+      <div class="word-box col span-1-of-2">
+        <div class="city-feature">
+          <ion-icon class="icon-small" name="pin"></ion-icon>
+          Ijapo Estate, Opposite Bliss World Hotel, Akure, Ondo State.
+        </div>
+        <div class="city-feature">
+          <ion-icon class="icon-small" name="call"></ion-icon>
+          +234 812 690 8746
+        </div>
+        <div class="city-feature">
+          <ion-icon class="icon-small" name="mail"></ion-icon>
+          Deremalik02@gmail.com
+        </div>
+        <div class="city-feature">
+          <ion-icon class="icon-small" name="logo-whatsapp"></ion-icon>
+          +234 812 690 8746
+        </div>
+        <div class="city-feature">
+          <ion-icon class="icon-small" name="logo-facebook"></ion-icon>
+          @DereOlaitan
+        </div>
+        <div class="city-feature">
+          <ion-icon class="icon-small" name="logo-twitter"></ion-icon>
+          <a href="#">@Opadere1212</a>
+        </div>
+        <div class="city-feature">
+          <ion-icon class="icon-small" name="logo-instagram"></ion-icon>
+          <a href="#">@Olaitan89244339</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Testimonial section -->
+  <section class="section-testimonials">
+    <div class="row">
+      <h2>Our customers can't live without us</h2>
+    </div>
+    <div class="row">
+      <div class="col span-1-of-3">
+        <blockquote>
+          Dcrown is just awesome! I just launched a startup which leaves me
+          with no time for cooking, so Dcrown is a life-saver. Now that I
+          got used to it, I couldn't live without my daily meals!
+          <cite><img src="resources/img/customer1.jpg" alt="Rotimi Adebayo" />
+            Rotimi Adebayo</cite>
+        </blockquote>
+      </div>
+      <div class="col span-1-of-3">
+        <blockquote>
+          Inexpensive, healthy and great-tasting meals, delivered right to my
+          home. We have lots of food delivery here in Akure, but no one comes
+          even close to Dcrown. Me and my family are so in love!
+          <cite><img src="resources/img/customer2.jpg" alt="Tunde Ajibade" />
+            Tunde Ajibade</cite>
+        </blockquote>
+      </div>
+      <div class="col span-1-of-3">
+        <blockquote>
+          I was looking for a quick and easy food delivery service in Akure.
+          I tried a lot of them and ended up with Dcrown. Best food
+          delivery service in the Alagbaka. Keep up the great work!
+          <cite><img src="resources/img/customer3.jpg" alt="Lenata Obi" />
+            Lenata Obi</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- pricing plans section -->
+  <section class="section-plans js--section-plans" id="plans">
+    <div class="row">
+      <h2>Start eating healthy today</h2>
+    </div>
+    <div class="row">
+      <!-- premium meal plan -->
+      <div class="col span-1-of-4">
+        <div class="plan-box js--wp-4">
+          <div>
+            <h3>Golden Tray</h3>
+            <p class="plan-price">
+              ₦25000 <span>/ meal</span>
+            </p>
+          </div>
+          <div>
+            <ul>
+              <li>
+                <ion-icon name="checkmark" class="icon-small"></ion-icon>Fried Rice
+              </li>
+              <li>
+                <ion-icon name="checkmark" class="icon-small"></ion-icon>Singaporean Noodles
+              </li>
+              <li>
+                <ion-icon name="checkmark" class="icon-small"></ion-icon>Chicken Sauce
+              </li>
+              <li>
+                <ion-icon name="checkmark" class="icon-small"></ion-icon>Small Chops
+              </li>
+              <li>
+                <ion-icon name="checkmark" class="icon-small"></ion-icon>Snail
+              </li>
+              <li>
+                <ion-icon name="checkmark" class="icon-small"></ion-icon>Plantain
+              </li>
+              <li>
+                <ion-icon name="checkmark" class="icon-small"></ion-icon>Grilled Chicken
+              </li>
+              <li>
+                <ion-icon name="checkmark" class="icon-small"></ion-icon>Juice
+              </li>
+              <li>
+                <ion-icon name="checkmark" class="icon-small"></ion-icon>Chapman
+              </li>
+              <li>
+                <ion-icon name="checkmark" class="icon-small"></ion-icon>Water
+              </li>
+              <li>
+                <ion-icon name="checkmark" class="icon-small"></ion-icon>A bottle of wine
+              </li>
+              <li>
+                <ion-icon name="checkmark" class="icon-small"></ion-icon>Magic mug with picture
+              </li>
+            </ul>
+          </div>
+          <div>
+            <a href="#" class="btn btn-full">Sign Up</a>
+          </div>
+        </div>
+      </div>
+      <!-- Pro meal plan -->
+      <div class="col span-1-of-4">
+        <div class="plan-box">
+          <div>
+            <h3>Large Tray</h3>
+            <p class="plan-price">
+              ₦15000 <span>/ meal</span>
+            </p>
+          </div>
+          <div>
+            <ul>
+              <li>
+                <ion-icon name="checkmark" class="icon-small"></ion-icon>Jollof Rice
+              </li>
+              <li>
+                <ion-icon name="checkmark" class="icon-small"></ion-icon>Fried or Coconut Rice
+              </li>
+              <li>
+                <ion-icon name="checkmark" class="icon-small"></ion-icon>Small Chops
+              </li>
+              <li>
+                <ion-icon name="checkmark" class="icon-small"></ion-icon>Coleslaw
+              </li>
+              <li>
+                <ion-icon name="checkmark" class="icon-small"></ion-icon>Plantain
+              </li>
+              <li>
+                <ion-icon name="checkmark" class="icon-small"></ion-icon>Grilled Chicken
+              </li>
+              <li>
+                <ion-icon name="checkmark" class="icon-small"></ion-icon>Beef Kebab
+              </li>
+              <li>
+                <ion-icon name="checkmark" class="icon-small"></ion-icon>Chapman
+              </li>
+              <li>
+                <ion-icon name="checkmark" class="icon-small"></ion-icon>Water
+              </li>
+              <li>
+                <ion-icon name="checkmark" class="icon-small"></ion-icon>A bottle of wine
+              </li>
+            </ul>
+          </div>
+          <div>
+            <a href="#" class="btn btn-ghost">Sign Up</a>
+          </div>
+        </div>
+      </div>
+      <!-- Starter meal plan -->
+      <div class="col span-1-of-4">
+        <div class="plan-box">
+          <div>
+            <h3>Mini Tray</h3>
+            <p class="plan-price">
+              ₦6500 <span>/ meal</span>
+            </p>
+            <p class="plan-price-meal">
+            </p>
+          </div>
+          <div>
+            <ul>
+              <li>
+                <ion-icon name="checkmark" class="icon-small"></ion-icon>Jollof Rice
+              </li>
+              <li>
+                <ion-icon name="checkmark" class="icon-small"></ion-icon>Small Chops
+              </li>
+              <li>
+                <ion-icon name="checkmark" class="icon-small"></ion-icon>Plantain
+              </li>
+              <li>
+                <ion-icon name="checkmark" class="icon-small"></ion-icon>Grilled Chicken
+              </li>
+              <li>
+                <ion-icon name="checkmark" class="icon-small"></ion-icon>Chapman
+              </li>
+              <li>
+                <ion-icon name="checkmark" class="icon-small"></ion-icon>Water
+              </li>
+              <li>
+                <ion-icon name="checkmark" class="icon-small"></ion-icon>Fruit of your choice
+              </li>
+            </ul>
+          </div>
+          <div>
+            <a href="#" class="btn btn-ghost">Sign Up</a>
+          </div>
+        </div>
+      </div>
+      <!-- premium meal plan -->
+      <div class="col span-1-of-4">
+        <div class="plan-box js--wp-4">
+          <div>
+            <h3>Single Meal</h3>
+            <p class="plan-price">
+              Order for Price <span>/ meal</span>
+            </p>
+          </div>
+          <div>
+            <ul>
+              <li>
+                <ion-icon name="checkmark" class="icon-small"></ion-icon>Toast Bread
+              </li>
+              <li>
+                <ion-icon name="checkmark" class="icon-small"></ion-icon>Pancakes
+              </li>
+              <li>
+                <ion-icon name="checkmark" class="icon-small"></ion-icon>Sandwiches
+              </li>
+              <li>
+                <ion-icon name="checkmark" class="icon-small"></ion-icon>Bread
+              </li>
+              <li>
+                <ion-icon name="checkmark" class="icon-small"></ion-icon>Boiled Plantain
+              </li>
+              <li>
+                <ion-icon name="checkmark" class="icon-small"></ion-icon>Fried Plantain
+              </li>
+              <li>
+                <ion-icon name="checkmark" class="icon-small"></ion-icon>Jollof Rice
+              </li>
+              <li>
+                <ion-icon name="checkmark" class="icon-small"></ion-icon>Fried Rice
+              </li>
+              <li>
+                <ion-icon name="checkmark" class="icon-small"></ion-icon>Freid Yam
+              </li>
+              <li>
+                <ion-icon name="checkmark" class="icon-small"></ion-icon>Chicken Wings
+              </li>
+              <li>
+                All meals come with our homemade Sauce with the option of Beef/ Chicken
+              </li>
+            </ul>
+          </div>
+          <div>
+            <a href="#" class="btn btn-full">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact form section -->
+  <section class="section-plan">
+    <div class="row">
+      <h2>We Woud Love to Take your Order</h2>
+    </div>
+    <div class="row">
+      <form action="#" method="POST" class="contact-form">
+        <div class="row">
+          <!-- 32.26% -->
+          <div class="col span-1-of-3">
+            <label for="name">Name</label>
+          </div>
+          <!-- 66.13% -->
+          <div class="col span-2-of-3">
+            <input type="text" name="name" id="name" placeholder="Please Enter Your Name" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col span-1-of-3">
+            <label for="email">Phone Number</label>
+          </div>
+          <div class="col span-2-of-3">
+            <input type="tel" name="Phone Number" id="number" placeholder="Please Enter Your Phone Number" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col span-1-of-3">
+            <label for="find-us">Which Tray would you Order?</label>
+          </div>
+          <div class="col span-2-of-3">
+            <!-- dropdown box -->
+            <select name="Tray" id="find-us">
+              <option value="friends" selected>Golden Tray</option>
+              <option value="search">Large Tray</option>
+              <option value="ad">Mini Tray</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col span-1-of-3">
+            <label for="">Delivery</label>
+          </div>
+          <div class="col span-2-of-3">
+            <!-- check box -->
+            <input type="checkbox" name="news" id="news" checked> Yes, Please.
+          </div>
+        </div>
+        <div class="row">
+          <div class="col span-1-of-3">
+            <label for="">Extra Instructions</label>
+          </div>
+          <div class="col span-2-of-3">
+            <!-- text area -->
+            <textarea name="message" placeholder="Enter your message here."></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col span-1-of-3">
+            <label for="">&nbsp;</label>
+          </div>
+          <div class="col span-2-of-3">
+            <!-- button -->
+            <input type="submit" value="Send it!">
+          </div>
+        </div>
+      </form>
+    </div>
+  </section><!-- contact form section end -->
+
+  <!-- footer -->
+  <footer>
+    <div class="row">
+      <div class="col span-1-of-2 col-nav">
+        <ul class="footer-nav">
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">IOS app</a></li>
+          <li><a href="#">Android app</a></li>
+        </ul>
+      </div>
+      <div class="col span-1-of-2 col-social">
+        <ul class="social-links">
+          <li><a href="#">
+              <ion-icon class="facebook" name="logo-facebook"></ion-icon>
+            </a></li>
+          <li><a href="#">
+              <ion-icon class="twitter" name="logo-twitter"></ion-icon>
+            </a></li>
+          <li><a href="#">
+              <ion-icon class="googleplus" name="logo-googleplus"></ion-icon>
+            </a></li>
+          <li><a href="#">
+              <ion-icon class="instagram" name="logo-instagram"></ion-icon>
+            </a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <p>
+        Copyright &copy; 2021 by DCrown. All rights reserved.
+      </p>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+  <script src="vendors/js/jquery.waypoints.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+  <script src="resources/js/script.js"></script>
+</body>
+
+</html>
